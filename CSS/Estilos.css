@@ -1,0 +1,77 @@
+/* CTRL + K + C activa comentarios "1. Estilos básicos aplicados a las secciones de Header, Footer y Lista de navegación
+2. Fuentes de Google Fonts implementadas [Esto ya está hecho]
+3. Propiedades de background aplicadas en alguna sección de la página  (color, imagen, degradado, etc.) */
+
+/* Regla CSS: Selector {propiedad: valor ;} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style-type: none;    
+}
+
+header {
+    background-image: url("../Imágenes/Otras/Cine.jpg"); 
+    height: 500px ; 
+    background-size: cover ;
+    background-position: center ;
+    size-adjust: 20%;
+    border: solid black 2px;
+}
+
+h1 {
+color: goldenrod ; 
+height: 50px ;
+padding-left: 1050px;
+padding-top: 100px ;
+margin: 5px;
+}
+
+.menú {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* Borrador para los menús. Me quedó obsoleto por Flexbox. Lo dejo acá por las dudas.
+
+    nav ul li a { 
+    color: beige;
+    background-color: brown;
+    border: 5px; 
+    display: inline-block;
+}
+    */
+
+body {
+    background-color: black;
+    color: white;
+}
+
+table {
+        font-size: 16px;
+}
+
+ /* { 
+    color: rgb(206, 193, 14);
+    background-color: rgb(12, 25, 211); 
+}*/
+
+body {
+    font-family: 'Outfit';
+}
+
+
+.img {width: 600;
+     height: 400; 
+    }

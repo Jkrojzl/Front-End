@@ -1,0 +1,46 @@
+<!-- No me lo piden pero página de prueba. Acá quiero intentar hacer un formulario más extenso -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xeaokqwg" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre completo: </label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="DNI">Número de documento: </label>
+            <input type="number" id="DNI" name="DNI">
+
+            <label for="mail">Correo electrónico: </label>
+            <input type="email" id="mail" name="mail">
+
+            <label for="formación">Grado de formación alcanzado: </label>
+            <input type="radio" id="secundario completo" name="formación" value="secundario completo" checked>
+            <label for="secundario completo"> Secundario completo</label>
+            <input type="radio" id="universitario incompleto" name="formación" value="universitario incompleto">
+            <label for="universitario incompleto"> Universitario incompleto</label>
+            <input type="radio" id="universitario completo" name="formación" value="universitario completo">
+            <label for="universitario completo"> Universitario completo</label>
+        </fieldset>
+
+     <fieldset>
+        <label for="motivo">¿Por qué te interesa la página</label>    
+        <textarea name="motivo" id="motivo" rows="4" cols="30"></textarea>
+
+     </fieldset>
+
+     <section>
+        <button type="submit">Enviar formulario</button>
+
+     </section>
+
+    </form>    
+</body>
+</html>
+
