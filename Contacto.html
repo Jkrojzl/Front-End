@@ -1,3 +1,73 @@
 <!-- 1. Crear un formulario de contacto con campos para nombre, correo electrónico y mensaje, utilizando Formspree para manejar el envío de datos
      2. Debe ser responsiva mediante el uso de Media Queries para adaptarse a diferentes tamaños de pantalla
 -->
+
+<!-- modify this form HTML and place wherever you want your form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contacto</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <link rel="stylesheet" href="./CSS/Estilos.css">
+
+</head>
+<body>
+     <header>
+        <nav>
+            <ul class="acceso">
+                <li> <a class= botón href="ingreso">Ingresar</a></li>
+                <li> <a class= botón href="Registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+        <h1>Contactos lejanos del tercer tipo</h1>
+    </header>
+    <nav>
+        <ul class="menú">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Directores.html">Índice de directores</a></li>
+            <li><a href="Reseñas.html">Reseñas</a></li>
+            <li><a href="Ingreso_reseña.html">Ingresar reseña</a></li>
+            <li><a href="Productos.html">Nuestros productos</a></li>
+            <li><i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+            <label for="buscar">Buscar: </label>
+           <input type="text"></li>
+        </ul>
+    </nav> 
+     <form
+  action="https://formspree.io/f/xyeznvzg"
+  method="POST">
+
+  <!-- Quiero que muestre el correo, no que lo introduzca. El usuario ya debería estar logueado con nombre de usuario + correo -->
+  <label for="mail">La respuesta será enviada al correo electrónico con el que te registraste </label>
+  <br>
+  <br>
+  <br>
+  <label for="mensaje">Escribe tu mensaje aquí: </label     >
+  <textarea name="mensaje"></textarea>
+  </label>
+  <button type="submit">Enviar mensaje</button>
+</form>    
+     <footer>
+      <img class="Logo" src="./Imágenes/Otras/Logo.png" alt="Logo">
+
+      <div class="Datos_personales">
+        
+        <p><strong>Nuestros datos</strong></p>
+
+        <p><strong>Dirección:</strong> Avenida Siempreviva 123</p>
+
+        <p><strong>Teléfono:</strong> 555-5555</p>
+
+        <p><strong><a href="Contacto.html">Contactanos</a></strong></p>
+      </div>
+
+      <div class="Mapa">
+      <p><strong>¿Cómo llegar?</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.3351094659374!2d-58.44265993401264!3d-34.598862817244196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0c687ee0b7%3A0x879b67a1fd77fb98!2sVilla%20Crespo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1790446990287!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      </footer>
+</body>
+</html>

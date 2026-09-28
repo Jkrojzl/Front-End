@@ -1,25 +1,23 @@
-<!-- No me lo piden pero página de prueba. Acá quiero intentar hacer un formulario más extenso -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Ingreso de una nueva reseña</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/Estilos.css">
 </head>
 <body>
-    <header>
+       <header>
         <nav>
             <ul class="acceso">
                 <li> <a class= botón href="ingreso">Ingresar</a></li>
                 <li> <a class= botón href="Registro.html">Registrarse</a></li>
             </ul>
         </nav>
-        <h1>Manifiesto</h1>
+        <h1>Ingresate una reseña</h1>
     </header>
-      <nav>
+    <nav>
         <ul class="menú">
             <li><a href="Index.html">Inicio</a></li>
             <li><a href="Directores.html">Índice de directores</a></li>
@@ -30,48 +28,26 @@
             <label for="buscar">Buscar: </label>
            <input type="text"></li>
         </ul>
-    </nav>
-    <form action="https://formspree.io/f/xeaokqwg" method="post">
-        <fieldset>
-            <legend>Datos de registro</legend>
-            <label for="usuario">Nombre de usuario: </label>
-            <input type="text" id="usuario" name="usuario">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-                    </fieldset>
-        
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label for="nombre">Nombre completo: </label>
-            <input type="text" id="nombre" name="nombre">
-
-            <label for="DNI">Número de documento: </label>
-            <input type="number" id="DNI" name="DNI">
-
-            <label for="mail">Correo electrónico: </label>
-            <input type="email" id="mail" name="mail">
-
-            <label for="formación">Grado de formación alcanzado: </label>
-            <input type="radio" id="secundario completo" name="formación" value="secundario completo" checked>
-            <label for="secundario completo"> Secundario completo</label>
-            <input type="radio" id="universitario incompleto" name="formación" value="universitario incompleto">
-            <label for="universitario incompleto"> Universitario incompleto</label>
-            <input type="radio" id="universitario completo" name="formación" value="universitario completo">
-            <label for="universitario completo"> Universitario completo</label>
-        </fieldset>
-
-     <fieldset>
-        <label for="motivo">¿Por qué te interesa la página</label>    
-        <textarea name="motivo" id="motivo" rows="4" cols="30"></textarea>
-
-     </fieldset>
-
-     <section>
-        <button type="submit">Enviar formulario</button>
-
-     </section>
+    </nav> 
+       
+    <form action="https://formspree.io/f/mnqkwrjd" method="post" autocomplete="off">
+        <label for="nombre.película">Nombre de la película: </label>
+        <input type="text" id="nombre.película" name="nombre.película" required>
+        <br>
+        <label for=año.película>Año de la película:  </label>
+        <input type="number" name="naño.película" required>
+        <br>
+        <label for="nombre.director">Nombre del director:  </label>
+        <input type="text" id="nombre.director" name="nombre.director" required>
+        <br>
+        <label for="reseña"> Reseña de la película:  </label>
+        <textarea name="reseña" id="reseña" required></textarea>
+        <br>
+        <br>
+        <button type="submit">Enviar reseña</button>
 
     </form>
+
         <footer>
       <img class="Logo" src="./Imágenes/Otras/Logo.png" alt="Logo">
 
@@ -93,4 +69,3 @@
       </footer>
 </body>
 </html>
-
